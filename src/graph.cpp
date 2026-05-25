@@ -5,6 +5,7 @@
 #include <numeric>
 #include <queue>
 #include <stack>
+#include "graph.h"
 using namespace std;
 
 void error(string msg){
@@ -13,23 +14,24 @@ void error(string msg){
 
 //--------------DisjointSet----------
 
-    DisjpintSet::DisjointSet(int numVertices){
+    DisjointSet::DisjointSet(int numVertices){
+		 subsets.resize(numVertices);
 
+		for (Vertex i = 0; i < numVertices; i++) {
+			makeSet(i);
+		}
 	}
 
     void DisjointSet::makeSet(Vertex x){
-		int count = count(subset.begin(), subset.end(), x);
-		if(count == 0){
 			subsets[x].parent = x;
 		
 	}
 
     Vertex DisjointSet::findSet(Vertex x){
-		if(subsets[x].parent!= x){
-			subsets[x].parent = findSet(subsets[x].parent;
-			return subsets[x].parent;
-		}
-		return x;
+		if(subsets[x].parent != x){
+			subsets[x].parent = findSet(subsets[x].parent);
+			}
+		return subsets[x].parent;
 
 	}
 
@@ -67,10 +69,10 @@ void error(string msg){
 		return result;
 	}
 //--------------Krukals----------------
-EdgeList Kruskals(const Graph& G);
-int sum_weights(EdgeList const& L); // important for testing - the total cost of MST
-void file_to_graph(string filename, Graph & G);
+//EdgeList Kruskals(const Graph& G);
+//int sum_weights(EdgeList const& L); // important for testing - the total cost of MST
+//void file_to_graph(string filename, Graph & G);
 
-VertexList dfs(const Graph& graph, Vertex startVertex);
-VertexList bfs(const Graph& graph, Vertex startVertex);
-string get_arg(int argc, char *argv[], string def);
+//VertexList dfs(const Graph& graph, Vertex startVertex);
+//VertexList bfs(const Graph& graph, Vertex startVertex);
+//string get_arg(int argc, char *argv[], string def);
