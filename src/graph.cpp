@@ -11,13 +11,8 @@ void error(string msg){
 	cerr << "Error: " << msg << endl; 
 }
 
+//--------------DisjointSet----------
 
-class DisjointSet {
-    struct Set {
-        Vertex parent;
-    };
-    vector<Set> subsets;
-public:
     DisjpintSet::DisjointSet(int numVertices){
 
 	}
@@ -47,13 +42,7 @@ public:
 		}
 		subsets[rooty].parent = rootx;	}
 
-
-using EdgeList = vector<Edge>;
-using VertexList = vector<Vertex>;
-
-struct Graph : public EdgeList
-{
-    int numVertices = 0;
+//---------------Graph---------------
     // each vertex is an integer in range 0..numVertices-1
     // returns a copy of graph with edges sorted ascending by edge weight
     Graph Graph::sort_edges() const{
@@ -66,10 +55,18 @@ struct Graph : public EdgeList
 	}
 
     VertexList Graph::edges_from(Vertex vertex) const{
-
-
+		VertexList result;
+		for(const Edge& edge : *this){
+			if(edge.u == vertex){
+				result.push_back(edge.v);
+			}
+			else if (edge.v == vertex){
+				result.push_back(edge.u);
+			}
+		}
+		return result;
 	}
-   
+//--------------Krukals----------------
 EdgeList Kruskals(const Graph& G);
 int sum_weights(EdgeList const& L); // important for testing - the total cost of MST
 void file_to_graph(string filename, Graph & G);
