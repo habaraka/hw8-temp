@@ -1,18 +1,69 @@
 #include "graph.h"
 
 int main(int argc, char *argv[]) {
-    //string filename = get_arg(argc, argv, "src/small.txt");
-    //Graph G;
-    //file_to_graph(filename, G);
+    string filename = get_arg(argc, argv, "src/small.txt");
+    Graph G;
+    file_to_graph(filename, G);
 
-    //cout << "MST: ";
-    //EdgeList mst = Kruskals(G);
-    //cout << mst << endl;
-    //cout << "Total weight = " << sum_weights(mst) << endl;
+    cout << "MST: ";
+    EdgeList mst = Kruskals(G);
+    cout << mst << endl;
+    cout << "Total weight = " << sum_weights(mst) << endl;
 
-    //cout << "DFS traversal: ";
-    //cout << dfs(G, 0) << endl;
+    cout << "DFS traversal: ";
+    cout << dfs(G, 0) << endl;
 
-    //cout << "BFS traversal: ";
-    //cout << bfs(G, 0) << endl;
+    cout << "BFS traversal: ";
+    cout << bfs(G, 0) << endl;
+
+	//-------------
+
+   filename = get_arg(argc, argv, "src/medium.txt");
+G.clear();
+file_to_graph(filename, G);
+
+cout << "MST: ";
+mst = Kruskals(G);
+    cout << mst << endl;
+    cout << "Total weight = " << sum_weights(mst) << endl;
+
+    cout << "DFS traversal: ";
+    cout << dfs(G, 0) << endl;
+
+    cout << "BFS traversal: ";
+    cout << bfs(G, 0) << endl;
+	//--------------
+   filename = get_arg(argc, argv, "src/large.txt");
+G.clear();
+file_to_graph(filename, G);
+
+cout << "MST: ";
+mst = Kruskals(G);
+    cout << mst << endl;
+    cout << "Total weight = " << sum_weights(mst) << endl;
+
+    cout << "DFS traversal: ";
+    cout << dfs(G, 0) << endl;
+
+    cout << "BFS traversal: ";
+    cout << bfs(G, 0) << endl;
+	//---------------
+
+    filename = get_arg(argc, argv, "src/largest.txt");
+G.clear();
+file_to_graph(filename, G);
+
+cout << "MST: ";
+mst = Kruskals(G);
+    cout << mst << endl;
+    cout << "Total weight = " << sum_weights(mst) << endl;
+
+    cout << "DFS traversal: ";
+    cout << dfs(G, 0) << endl;
+
+    cout << "BFS traversal: ";
+    cout << bfs(G, 0) << endl;
+
+
+
 }
