@@ -62,9 +62,6 @@ void error(string msg){
 			if(edge.u == vertex){
 				result.push_back(edge.v);
 			}
-			else if (edge.v == vertex){
-				result.push_back(edge.u);
-			}
 		}
 		return result;
 	}
