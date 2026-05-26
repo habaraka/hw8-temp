@@ -1,0 +1,1 @@
+/usr/bin/g++ -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -fsanitize=address,undefined -fsanitize-recover=all CMakeFiles/main.dir/src/graph.cpp.o CMakeFiles/main.dir/src/main.cpp.o -o main 

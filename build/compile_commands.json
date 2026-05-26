@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/habaraka/hw-8-habaraka/build",
+  "command": "/usr/bin/g++   -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -std=c++20 -o CMakeFiles/main.dir/src/graph.cpp.o -c /home/habaraka/hw-8-habaraka/src/graph.cpp",
+  "file": "/home/habaraka/hw-8-habaraka/src/graph.cpp"
+},
+{
+  "directory": "/home/habaraka/hw-8-habaraka/build",
+  "command": "/usr/bin/g++   -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -std=c++20 -o CMakeFiles/main.dir/src/main.cpp.o -c /home/habaraka/hw-8-habaraka/src/main.cpp",
+  "file": "/home/habaraka/hw-8-habaraka/src/main.cpp"
+},
+{
+  "directory": "/home/habaraka/hw-8-habaraka/build",
+  "command": "/usr/bin/g++  -I/home/habaraka/hw-8-habaraka/src -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -DGTEST_HAS_PTHREAD=1 -std=c++20 -o CMakeFiles/student_gtests.dir/gtest/gtestmain.cpp.o -c /home/habaraka/hw-8-habaraka/gtest/gtestmain.cpp",
+  "file": "/home/habaraka/hw-8-habaraka/gtest/gtestmain.cpp"
+},
+{
+  "directory": "/home/habaraka/hw-8-habaraka/build",
+  "command": "/usr/bin/g++  -I/home/habaraka/hw-8-habaraka/src -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -DGTEST_HAS_PTHREAD=1 -std=c++20 -o CMakeFiles/student_gtests.dir/gtest/student_gtests.cpp.o -c /home/habaraka/hw-8-habaraka/gtest/student_gtests.cpp",
+  "file": "/home/habaraka/hw-8-habaraka/gtest/student_gtests.cpp"
+},
+{
+  "directory": "/home/habaraka/hw-8-habaraka/build",
+  "command": "/usr/bin/g++  -I/home/habaraka/hw-8-habaraka/src -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -DGTEST_HAS_PTHREAD=1 -std=c++20 -o CMakeFiles/student_gtests.dir/src/graph.cpp.o -c /home/habaraka/hw-8-habaraka/src/graph.cpp",
+  "file": "/home/habaraka/hw-8-habaraka/src/graph.cpp"
+}
+]

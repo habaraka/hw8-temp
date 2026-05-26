@@ -1,0 +1,4 @@
+/home/habaraka/hw-8-habaraka/build/CMakeFiles/main.dir
+/home/habaraka/hw-8-habaraka/build/CMakeFiles/student_gtests.dir
+/home/habaraka/hw-8-habaraka/build/CMakeFiles/edit_cache.dir
+/home/habaraka/hw-8-habaraka/build/CMakeFiles/rebuild_cache.dir
